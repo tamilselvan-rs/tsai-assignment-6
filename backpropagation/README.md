@@ -27,8 +27,9 @@ In setting a learning rate, there is a trade-off between the rate of convergence
 **Error Function:** [Mean Squared Error](https://en.wikipedia.org/wiki/Mean_squared_error)
 
 ## Back Propagation Document
-
 [TSAI Backpropagation Assignment - Tamil Selvan](https://docs.google.com/spreadsheets/d/1GA_GmtCZ7NVgXPDtNhTgmYEpnT9lJ8MNiPwMx0Tyg8A/edit#gid=0)
+
+![Snapshot](snapshot.png)
 
 ## Important Formulas
 
