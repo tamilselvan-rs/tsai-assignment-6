@@ -65,9 +65,9 @@ The Model developed uses NLL as Loss Function [[1]](https://ljvmiranda921.github
 
 The Model developed uses SGD as Optimizer [[1]](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)
 
-LR of the Model is set to `0.019` to achieve desired (99.4%) Accuracy
+LR of the Model is set to `0.02` to achieve desired (99.4%) Accuracy
 
-`optimizer = optim.SGD(model.parameters(), lr=0.0195, momentum=0.9)`
+`optimizer = optim.SGD(model.parameters(), lr=0.02, momentum=0.9)`
 
 Note: It is important for us to reset gradients to zero for every mini batch to avoid accumulation of gradients [Reference](https://stackoverflow.com/a/48009142)
 `optimizer.zero_grad()`
