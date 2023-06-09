@@ -77,7 +77,7 @@ Testing/Validation is a simple process of iterating the test data set against th
 
 ## Results
 Model Accuracy at 20 Epoch
-<img width="1047" alt="Screenshot 2023-06-03 at 3 19 32 AM" src="https://github.com/tamilselvan-rs/tsai-bootcamp/assets/135374296/2cecc795-0139-4aef-8e01-12f2fccca785">
+![result](result.png)
  
 
 
