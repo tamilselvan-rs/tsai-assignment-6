@@ -1,4 +1,4 @@
-# tsai-bootcamp
+# tsai-bootcamp assignment S6
 
 ## The Problem
 Predict Handwritten digits using NN with 99.4% Accuracy
@@ -22,6 +22,21 @@ Predict Handwritten digits using NN with 99.4% Accuracy
 
 ![Model](model.png)
 
+### Restrictions Applied:
+1. No of Parameters must be < 20K
+2. Not more than 20 Epochs
+
+### Tuning
+1. Tried with learning rates from 0.019, 0.0195, 0.0198, 0.02 (achieved 99.4), 0.021
+2. Introduced maximum layers in first two convultions to keep a check on number of parameters and to predict edges & gradient better (as the job is preliminary to identify handwritten digits with very less noise)
+3. Achieved receptive field of 26 [[link]](https://docs.google.com/spreadsheets/d/1W3uckDxoCBV2CHk0t1rzdoxKEFlXOPNzd5sAfsK8Slw/edit#gid=932103416) to make sure the last layer has seen the entire image
+4. Used GAP in first convolution where the vision is too narrow
+5. Used Max Pooling post layer 2 expecting edge and gradient detection to be successful already (also as a best practice it is better to keep MP and AP far away from the output layer)
+6. Applied Batch Normalization in every layer except the last one
+7. Used Relu as the activation function and applied it next to BN as per recommendation
+8. Reduced the FC layer to 1 as the number of input channels is less than 150 (this has helped us to keep # of params in check)
+9. Tried a model with only 3 Convolutions but the desired accuracy couldn't be reached
+10. Applied dropouts at every convolution layer except the last (0.2,0.1,0.1)
 
 ## Training Data Preparation
 1. Inputs are scaled down to 28*28
