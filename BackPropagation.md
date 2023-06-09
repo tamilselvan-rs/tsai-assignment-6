@@ -32,13 +32,16 @@ In setting a learning rate, there is a trade-off between the rate of convergence
 
 ## Important Formulas
 
-| Name      | Formula |
-| ----------- | ----------- |
-| Sigmoid      | $1/(1 + exp (-x))$ |
-| MSE   | $1/n \sum_{k=1}^n (a_k - a_k')^2  $ |
-| Chain Rule   | $∂z/∂x = ∂z/∂y * ∂y/∂x$ $z => x => y$         |
-|  Derivative of σ   | $σ * (1-σ)$ |
-| Linearity Rule  | $∂(a*f(x) + b*g(x))/∂x = a*∂f(x)/∂x + b*∂g(x)/∂x$     | 
+1. [Sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function) 
+$$1/(1 + \mathrm{e}^{-x})$$
+2. [MSE](https://en.wikipedia.org/wiki/Mean_squared_error) 
+$$1/n \sum_{k=1}^n (a_k - a_k')^2$$
+3. [Derivative of f = σ(x)](https://towardsdatascience.com/derivative-of-the-sigmoid-function-536880cf918e)
+$$\mathrm{d}f/\mathrm{d}x = f \ast (1-f)$$
+4. [Chain Rule](https://en.wikipedia.org/wiki/Chain_rule) 
+$$∂z/∂x = ∂z/∂y \ast ∂y/∂x\;z \rightarrow x \rightarrow y$$
+5. [Linearity Rule](https://en.wikipedia.org/wiki/Linearity_of_differentiation)
+$$\partial(a \ast f(x) + b \ast g(x))/\partial{x} = a \ast \partial{f(x)}/\partial{x} + b \ast \partial{g(x)}/\partial{x}$$ 
 
 
 ## Outputs by Learning Rate
